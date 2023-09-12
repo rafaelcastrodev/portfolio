@@ -1,0 +1,82 @@
+body {
+	/* background: #2d2d2d; */
+}
+
+header {
+	/* background: red; */
+}
+.hdr-profile-pic img {
+	border-radius: 50%;
+	max-width: 150px;
+	min-width: 110px;
+	overflow: hidden;
+}
+.hdr-profile-info {
+}
+
+.hdr-profile-social {
+}
+.hdr-profile-social-icon {
+	width: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+	.hdr-profile-pic {
+		margin-bottom: 1rem;
+	}
+	.hdr-profile-social {
+		justify-content: center;
+		margin-top: 1rem;
+	}
+}
+
+main {
+	/* background: yellow; */
+	margin: 0 auto;
+	max-width: 1366px;
+}
+
+.card {
+	display: inline-block;
+	margin: 1rem;
+	margin-bottom: 2rem;
+	max-width: 26rem;
+	min-width: 16rem;
+	overflow: hidden;
+}
+.card img {
+	transition: transform 0.3s;
+}
+.card:hover img {
+	transform: scale(1.02);
+}
+.card-title {
+	margin: 0.5rem 0;
+	text-transform: uppercase;
+}
+
+footer {
+	background: white;
+	bottom: 0;
+	position: fixed;
+}
+.ftr-btn-gotop {
+	/* background: none; */
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	font-weight: bold;
+	height: 1rem;
+	transform: rotate(-90deg);
+	padding: 0;
+	padding-left: 0.1rem;
+	padding-bottom: 1rem;
+	width: 1rem;
+}
+.ftr-btn-gotop:hover {
+	transform: rotate(-90deg) scale(1.1);
+}
